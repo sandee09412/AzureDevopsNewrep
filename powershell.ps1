@@ -1,7 +1,7 @@
 # Load current version
-$majorVersion = $(MajorVersion)
-$minorVersion = $(MinorVersion)
-$patchVersion = $(PatchVersion)
+$majorVersion = $env:MajorVersion
+$minorVersion = $env:MinorVersion
+$patchVersion = $env:PatchVersion
 
 # Increment version (you can customize this logic)
 $patchVersion++
