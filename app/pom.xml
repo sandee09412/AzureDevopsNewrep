@@ -33,19 +33,19 @@
         <!-- end::tests[] -->
     </dependencies>
     
-    <!-- Remove the extra closing </repositories> tag -->
-    
-    <repository>
-        <id>Mynewfeed</id>
-        <url>https://pkgs.dev.azure.com/Q3demo/_packaging/Mynewfeed/maven/v1</url>
-        <releases>
-            <enabled>true</enabled>
-        </releases>
-        <snapshots>
-            <enabled>true</enabled>
-        </snapshots>
-    </repository>
-    
+    <!-- Move the repository inside the repositories section -->
+    <repositories>
+        <repository>
+            <id>Mynewfeed</id>
+            <url>https://pkgs.dev.azure.com/Q3demo/_packaging/Mynewfeed/maven/v1</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
     <distributionManagement>
         <repository>
             <id>Mynewfeed</id>
