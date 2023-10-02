@@ -32,7 +32,30 @@
         </dependency>
         <!-- end::tests[] -->
     </dependencies>
-
+    <repositories>
+    <repository>
+  <id>Q3demo-test</id>
+  <url>https://pkgs.dev.azure.com/Q3demo/_packaging/Q3demo-test/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
+    </repositories>
+    <distributionManagement>
+    <repository>
+  <id>Q3demo-test</id>
+  <url>https://pkgs.dev.azure.com/Q3demo/_packaging/Q3demo-test/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
+    </distributionManagement>
     <properties>
         <java.version>1.8</java.version>
     </properties>
